@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   savedEntries.forEach(entry => {
     const entryElement = document.createElement('li');
-    entryElement.innerHTML = `${entry.html}<button class="delete-button">Delete</button>`;
+    entryElement.innerHTML = entry.html;
     entriesList.appendChild(entryElement);
   });
 });
@@ -45,4 +45,3 @@ entriesList.addEventListener('click', function (e) {
     }
   }
 });
-
